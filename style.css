@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  background-color: #292929;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.fill {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+}
+.metody * {
+  width: 10vw;
+  height: 20px;
+  background-color: #d1d1d1;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.metody {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: center;
+  align-content: center;
+}
+.content {
+  background-color: coral;
+  display: flex;
+}
+.wynik {
+  height: 30vh;
+}
