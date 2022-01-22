@@ -1,3 +1,7 @@
+*{
+  font-family: 'Kanit', sans-serif;font-family: 'Khula', sans-serif;font-family: 'Montserrat', sans-serif;font-family:
+    'Nosifer', cursive;font-family: 'Russo One', sans-serif;
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -8,6 +12,11 @@ body {
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+h1{
+  grid-column: 1/4;
+  color: #f1eee4
 }
 .fill {
   display: flex;
@@ -17,26 +26,62 @@ main {
 input {
   padding: 10px;
   margin: 10px;
+  background-color: #f1eee4;
+  border: none;
+}
+input:hover{
+ 
+  transition: all 250ms;
+  transform: scale(1.07);
+  cursor: pointer;
+}
+.x{
+  border-bottom:7px solid #007157;
 }
 .metody * {
-  width: 10vw;
+  width: 15vh;
   height: 20px;
-  background-color: #d1d1d1;
-  margin: 10px;
+  background-color: #f1eee4;
+  margin: 13px;
   padding: 10px;
   text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+.metody *:hover{
+  background-color: rgb(211, 112, 76);
+  transition: all 250ms;
+  transform: scale(1.07);
+  cursor: pointer;
 }
 .metody {
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  justify-content: center;
-  align-content: center;
+  place-items: center;
+  margin-top:30px;
 }
 .content {
-  background-color: coral;
+  flex-direction: column;
+ 
   display: flex;
 }
-.wynik {
-  height: 30vh;
+.content p{
+  display: flex;
+  justify-content: center;
+  color: #f1eee4;
+  font-size: 2em;
+}
+.content div {
+  margin: 20px;
+  padding: 30px;
+  width: 30vh;
+  height: 20vh;
+  background-color: coral;
+  border-radius: 20px;
+ display: grid;
+ place-items: center;
+ 
 }
